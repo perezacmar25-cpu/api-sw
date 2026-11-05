@@ -1,0 +1,5 @@
+<div class="people-list">
+  @for (people of peopleList(); track people.url) {
+    <app-people-item-component [people]="people" (peopleClicked)="openPeopleModal($event)"></app-people-item-component>
+  }
+</div>

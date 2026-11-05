@@ -1,0 +1,13 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ people()?.name }}</h5>
+    <p class="card-text mb-1"><strong>Año de nacimiento:</strong> {{ people()?.birth_year }}</p>
+    <p class="card-text mb-1"><strong>Género:</strong> {{ people()?.gender }}</p>
+    <p class="card-text mb-1"><strong>Altura:</strong> {{ people()?.height }} cm</p>
+    <p class="card-text mb-3"><strong>Peso:</strong> {{ people()?.mass }} kg</p>
+
+    <button type="button" class="btn btn-primary btn-sm" (click)="emitPeopleClicked()">
+      Ver detalles
+    </button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.people-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+:host ::ng-deep app-people-item-component {
+  display: block;
+  width: 18rem;
+}
+
+:host ::ng-deep .card {
+  height: 100%;
+}

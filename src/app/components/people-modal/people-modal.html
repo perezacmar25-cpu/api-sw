@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h5 class="modal-title">{{ peopleDetail?.name }}</h5>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="modal-body">
+  @if (peopleDetail) {
+    <p><strong>Altura:</strong> {{ peopleDetail.height }} cm</p>
+    <p><strong>Peso:</strong> {{ peopleDetail.mass }} kg</p>
+    <p><strong>Color de pelo:</strong> {{ peopleDetail.hair_color }}</p>
+    <p><strong>Color de piel:</strong> {{ peopleDetail.skin_color }}</p>
+    <p><strong>Color de ojos:</strong> {{ peopleDetail.eye_color }}</p>
+    <p><strong>Año de nacimiento:</strong> {{ peopleDetail.birth_year }}</p>
+    <p><strong>Género:</strong> {{ peopleDetail.gender }}</p>
+  }
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="activeModal.close()">Cerrar</button>
+</div>
